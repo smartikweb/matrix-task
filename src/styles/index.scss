@@ -1,6 +1,74 @@
-$body-color: slateblue;
-
+html,
+body,
+.lists-container {
+  height: 100%;
+}
 body {
-  color: $body-color;
   font-family: sans-serif;
+}
+.lists-container h4 {
+  font-size: 1em;
+}
+.lists-container > .row {
+  height: 50%;
+  border-bottom: 1px solid #bbbbbb;
+}
+.lists-container > .row > .col-6 {
+  border-right: 1px solid #bbbbbb;
+}
+.lists-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  .fa-trash {
+    display: none;
+  }
+  li {
+    cursor: pointer;
+  }
+  li:hover {
+    .fa-trash {
+      display: inline;
+      color: orangered;
+    }
+  }
+}
+.doneList li {
+  text-decoration: line-through;
+}
+.h-15 {
+  height: 15%;
+}
+.h-10 {
+  height: 10%;
+}
+#importantAndUrgent {
+  background-color: rgb(248, 200, 109);
+  .header-background {
+    background-color: rgb(255, 163, 77);
+  }
+}
+#importantAndNotUrgent {
+  background-color: rgb(78, 255, 137);
+  .header-background {
+    background-color: rgb(81, 199, 154);
+  }
+}
+#notImportantAndUrgent {
+  background-color: rgb(246, 255, 115);
+  .header-background {
+    background-color: rgb(255, 221, 70);
+  }
+}
+#notImportantNotUrgent {
+  background-color: rgb(0, 255, 213);
+  .header-background {
+    background-color: rgb(44, 197, 235);
+  }
+}
+.header-background {
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.remove {
+  display: none;
 }
